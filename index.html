@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>TruthBean</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="TruthBean 个人网站">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TruthBean">
+<meta property="og:url" content="http://blog.truthbean.com/index.html">
+<meta property="og:site_name" content="TruthBean">
+<meta property="og:description" content="TruthBean 个人网站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TruthBean">
+<meta name="twitter:description" content="TruthBean 个人网站">
+  
+    <link rel="alternate" href="/atom.xml" title="TruthBean" type="application/atom+xml">
+  
+  
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class="active"
+                 href="/index.html">主頁</a></li>
+        
+          <li><a class=""
+                 href="/archives/">目錄</a></li>
+        
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="blog-header">
+  <h1 class="blog-title">TruthBean</h1>
+  
+    <p class="lead blog-description">斌君執筆詩為璩</p>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-9 blog-main">
+          
+  
+    <article id="post-css-query" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/22/css-query/">CSS选择器</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/07/22/css-query/" class="article-date"><time datetime="2016-07-22T13:06:56.594Z" itemprop="datePublished">2016-07-22</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p><strong>*通用选择器</strong>：选择所有元素，<strong>不参与计算优先级</strong>，兼容性IE6+</p>
+</li>
+<li><p><strong>#X id选择器</strong>：选择id值为X的元素，兼容性：IE6+</p>
+</li>
+<li><p><strong>.X 类选择器</strong>： 选择class包含X的元素，兼容性：IE6+</p>
+</li>
+<li><p><strong>X Y后代选择器</strong>： 选择满足X选择器的后代节点中满足Y选择器的元素，兼容性：IE6+</p>
+</li>
+<li><p><strong>X 元素选择器</strong>： 选择标所有签为X的元素，兼容性：IE6+</p>
+</li>
+<li><p><strong>:link, :visited, :focus, :hover, :active链接状态</strong>： 选择特定状态的链接元素，顺序LoVe HAte，兼容性: IE4+</p>
+</li>
+<li><p><strong>X + Y直接兄弟选择器</strong>：在<strong>X之后第一个兄弟节点</strong>中选择满足Y选择器的元素，兼容性： IE7+</p>
+</li>
+<li><p><strong>X &gt; Y子选择器</strong>： 选择X的子元素中满足Y选择器的元素，兼容性： IE7+</p>
+</li>
+<li><p><strong>X ~ Y兄弟</strong>： 选择<strong>X之后所有兄弟节点</strong>中满足Y选择器的元素，兼容性： IE7+</p>
+</li>
+<li><p><strong>[attr]</strong>：选择所有设置了attr属性的元素，兼容性IE7+</p>
+</li>
+<li><p><strong>[attr=value]</strong>：选择属性值刚好为value的元素</p>
+</li>
+<li><p><strong>[attr~=value]</strong>：选择属性值为空白符分隔，其中一个的值刚好是value的元素</p>
+</li>
+<li><p><strong>[attr|=value]</strong>：选择属性值刚好为value或者value-开头的元素</p>
+</li>
+<li><p><strong>[attr^=value]</strong>：选择属性值以value开头的元素</p>
+</li>
+<li><p><strong>[attr$=value]</strong>：选择属性值以value结尾的元素</p>
+</li>
+<li><p><strong>[attr*=value]</strong>：选择属性值中包含value的元素</p>
+</li>
+<li><p><strong>[:checked]</strong>：选择单选框，复选框，下拉框中选中状态下的元素，兼容性：IE9+</p>
+</li>
+<li><p><strong>X:after, X::after</strong>：after伪元素，选择元素虚拟子元素（元素的最后一个子元素），CSS3中::表示伪元素。兼容性:after为IE8+，::after为IE9+</p>
+</li>
+<li><p><strong>:hover</strong>：鼠标移入状态的元素，兼容性a标签IE4+， 所有元素IE7+</p>
+</li>
+<li><p><strong>:not(selector)</strong>：选择不符合selector的元素。<strong>不参与计算优先级</strong>，兼容性：IE9+</p>
+</li>
+<li><p><strong>::first-letter</strong>：伪元素，选择块元素第一行的第一个字母，兼容性IE5.5+</p>
+</li>
+<li><p><strong>::first-line</strong>：伪元素，选择块元素的第一行，兼容性IE5.5+</p>
+</li>
+<li><p><strong>:nth-child(an + b)</strong>：伪类，选择前面有an + b - 1个兄弟节点的元素，其中n&gt;= 0， 兼容性IE9+</p>
+</li>
+<li><p><strong>:nth-last-child(an + b)</strong>：伪类，选择后面有an + b - 1个兄弟节点的元素其中n &gt;= 0，兼容性IE9+</p>
+</li>
+<li><p><strong>X:nth-of-type(an+b)</strong>：伪类，X为选择器，<strong>解析得到元素标签</strong>，选择<strong>前面</strong>有an + b - 1个<strong>相同标签</strong>兄弟节点的元素。兼容性IE9+</p>
+</li>
+<li><p><strong>X:nth-last-of-type(an+b)</strong>：伪类，X为选择器，解析得到元素标签，选择<strong>后面</strong>有an+b-1个相同<strong>标签</strong>兄弟节点的元素。兼容性IE9+</p>
+</li>
+<li><p><strong>X:first-child</strong>：伪类，选择满足X选择器的元素，且这个元素是其父节点的第一个子元素。兼容性IE7+</p>
+</li>
+<li><p><strong>X:last-child</strong>：伪类，选择满足X选择器的元素，且这个元素是其父节点的最后一个子元素。兼容性IE9+</p>
+</li>
+<li><p><strong>X:only-child</strong>：伪类，选择满足X选择器的元素，且这个元素是其父元素的唯一子元素。兼容性IE9+</p>
+</li>
+<li><p><strong>X:only-of-type</strong>：伪类，选择X选择的元素，<strong>解析得到元素标签</strong>，如果该元素没有相同类型的兄弟节点时选中它。兼容性IE9+</p>
+</li>
+<li><p><strong>X:first-of-type</strong>：伪类，选择X选择的元素，<strong>解析得到元素标签</strong>，如果该元素是此此类型元素的第一个兄弟。选中它。兼容性IE9+</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://blog.truthbean.com/2016/07/22/css-query/" data-id="ciqxtoxdy0000hoqinm1tzaud" class="article-share-link">
+        <i class="fa fa-share"></i> 分享
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-tomcat_iis_share_80_port" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/22/tomcat_iis_share_80_port/">Windows 2008 使tomcat 与 iis 共用 80 端口</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/07/22/tomcat_iis_share_80_port/" class="article-date"><time datetime="2016-07-22T12:46:50.798Z" itemprop="datePublished">2016-07-22</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>不论服务器是否有多个网卡，都可以绑定多个ip,具体过程不必赘述，请自行百度。
+下面的操作则很明显了，将iis与tomcat分别绑定不同的ip。
+</code></pre><h3 id="1、iis绑定ip"><a href="#1、iis绑定ip" class="headerlink" title="1、iis绑定ip"></a>1、iis绑定ip</h3><pre><code>想必windows 2003下使用 httpcfg.exe 大家已经都知道了。那么，win 2008 呢，很简单，使用 netsh.exe ;
+绑定过程：(来自 http://support.microsoft.com/kb/954874)
+</code></pre><h4 id="将-IP-地址添加到-IP-侦听列表"><a href="#将-IP-地址添加到-IP-侦听列表" class="headerlink" title="将 IP 地址添加到 IP 侦听列表"></a>将 IP 地址添加到 IP 侦听列表</h4><pre><code>单击开始，单击运行，键入cmd，然后单击确定。打开一个命令提示符窗口。
+在命令提示符下，键入下面的命令：
+netsh http add iplisten xxx.xxx.x.x
+注意:xxx.xxx.x.x表示您想要添加的 IP 地址。
+
+如果已成功添加的 IP 地址，您将收到以下消息：
+成功添加 IP 地址
+要列出的 IP 地址，请键入以下命令后添加的 IP 地址：
+netsh http show iplisten
+
+Netsh 实用程序将返回以下信息：
+在 IP 侦听列表中显示的 IP 地址: xxx.xxx.x.x
+停止 HTTP 服务及相关服务。若要执行此操作，请键入以下命令：
+net stop http
+重新启动 HTTP 服务及相关服务。若要执行此操作，请键入以下命令：
+net start http
+重新启动 W3SVC 服务。若要执行此操作，请键入以下命令：
+net start w3svc
+
+注意:在将 HTTP 服务启动时读取 IP 侦听列表。如果您修改列表，您必须重新启动 HTTP 服务。
+</code></pre><h3 id="2、更改tomcat-server-xml-配置文件，将address-中的值改为要绑定的ip地址"><a href="#2、更改tomcat-server-xml-配置文件，将address-中的值改为要绑定的ip地址" class="headerlink" title="2、更改tomcat server.xml 配置文件，将address 中的值改为要绑定的ip地址"></a>2、更改tomcat server.xml 配置文件，将address 中的值改为要绑定的ip地址</h3>
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://blog.truthbean.com/2016/07/22/tomcat_iis_share_80_port/" data-id="ciqw3msgm0000d5pvh6i1ts5i" class="article-share-link">
+        <i class="fa fa-share"></i> 分享
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运维/">运维</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-learn_markdown" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/22/learn_markdown/">markdown快速上手</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/07/22/learn_markdown/" class="article-date"><time datetime="2016-07-22T12:46:50.782Z" itemprop="datePublished">2016-07-22</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h3 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">行首加 "# " （井号加空格）或者文字的第二行加两个等于号（"=="）</div></pre></td></tr></table></figure>
+<h3 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">行首加 "## " （两个井号加空格）或者文字的第二行加两个减号（"--"）</div></pre></td></tr></table></figure>
+<h3 id="三四五六级标题"><a href="#三四五六级标题" class="headerlink" title="三四五六级标题"></a>三四五六级标题</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">跟前面类似，都是在行首前加多个"#"（三级标题加三个，四级标题加四个...）</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="块区域"><a href="#块区域" class="headerlink" title="块区域"></a>块区域</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">由两行“<span class="code">```”组成，中间为快区域内容，如：</span></div><div class="line">    "```"</div><div class="line">    "块区域"</div><div class="line">    "```"</div><div class="line">注意：没有双引号</div></pre></td></tr></table></figure>
+<blockquote>
+<p>代码块</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">代码块是文字前加"&gt;"，如</div><div class="line"><span class="quote">&gt; console.log("hello")</span></div></pre></td></tr></table></figure>
+<hr>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">第一种： <span class="emphasis">***</span></div><div class="line">第二种： ---</div></pre></td></tr></table></figure>
+<hr>
+<p><strong>强调</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="strong">**强调**</span></div><div class="line">效果跟CSS样式“font-weight:bold”效果一样</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>[1]:<a href="http://www.google.com" target="_blank" rel="external">google</a> <code>printf(&#39;google&#39;)</code></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://blog.truthbean.com/2016/07/22/learn_markdown/" data-id="ciqi5ewgb0000zcqi85u5pm2r" class="article-share-link">
+        <i class="fa fa-share"></i> 分享
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-js-learn-website" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/22/js-learn-website/">javascript 学习网站</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/07/22/js-learn-website/" class="article-date"><time datetime="2016-07-22T12:46:50.782Z" itemprop="datePublished">2016-07-22</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、<a href="http://webplatform.org" target="_blank" rel="external">http://webplatform.org</a></p>
+<p>2、<a href="http://caniuse.com" target="_blank" rel="external">http://caniuse.com</a></p>
+<p>3、<a href="developer.mozilla.org">http://developer.mozilla.org</a></p>
+<p>4、<a href="http://www.w3.org" target="_blank" rel="external">http://www.w3.org</a></p>
+<p>5、<a href="https://www.chromestatus.com" target="_blank" rel="external">https://www.chromestatus.com</a></p>
+<p>6、<a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/" target="_blank" rel="external">https://developer.microsoft.com/en-us/microsoft-edge/platform/status/</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://blog.truthbean.com/2016/07/22/js-learn-website/" data-id="ciqw5n08t0001d5pvmyzozsb7" class="article-share-link">
+        <i class="fa fa-share"></i> 分享
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+
+        </div>
+        <div class="col-sm-2">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>关于</h4>
+  <p>能量是萬物運動的直接原因，它存儲在磷酸二酯鍵中，驅使者人類的所有活動，一顰一笑，動靜之中。它若消失，世界便停止。同樣，作為人進化發展的根本動力————學習，若它失去了推動力，自我進化也就停止了。</p>
+
+</div>
+
+
+  
+
+
+  
+  <div class="sidebar-module">
+    <h4>标签</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/css/">css</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/javascript/">javascript</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/markdown/">markdown</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/运维/">运维</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>标签云</h4>
+    <p class="tagcloud">
+      <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/运维/" style="font-size: 10px;">运维</a>
+    </p>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>目录</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2016/07/">July 2016</a><span class="sidebar-module-list-count">4</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>最近</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2016/07/22/css-query/">CSS选择器</a>
+        </li>
+      
+        <li>
+          <a href="/2016/07/22/tomcat_iis_share_80_port/">Windows 2008 使tomcat 与 iis 共用 80 端口</a>
+        </li>
+      
+        <li>
+          <a href="/2016/07/22/learn_markdown/">markdown快速上手</a>
+        </li>
+      
+        <li>
+          <a href="/2016/07/22/js-learn-website/">javascript 学习网站</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      Powered by &copy; 2016 <a href="http://www.truthbean.com/" target="_blank"> TruthBean </a>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

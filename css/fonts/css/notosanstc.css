@@ -1,0 +1,51 @@
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../worff/notosanstc/NotoSansTC-Thin.woff2') format('woff2'),
+    url('../worff/notosanstc/NotoSansTC-Thin.woff') format('woff'),
+    url(../worff/notosanstc/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../worff/notosanstc/NotoSansTC-Light.woff2) format('woff2'),
+    url(../worff/notosanstc/NotoSansTC-Light.woff) format('woff'),
+    url(../worff/notosanstc/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../worff/notosanstc/NotoSansTC-Regular.woff2) format('woff2'),
+    url(../worff/notosanstc/NotoSansTC-Regular.woff) format('woff'),
+    url(../worff/notosanstc/NotoSansTC-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../worff/notosanstc/NotoSansTC-Medium.woff2) format('woff2'),
+    url(../worff/notosanstc/NotoSansTC-Medium.woff) format('woff'),
+    url(../worff/notosanstc/NotoSansTC-Medium.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../worff/notosanstc/NotoSansTC-Bold.woff2) format('woff2'),
+    url(../worff/notosanstc/NotoSansTC-Bold.woff) format('woff'),
+    url(../worff/notosanstc/NotoSansTC-Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../worff/notosanstc/NotoSansTC-Black.woff2) format('woff2'),
+    url(../worff/notosanstc/NotoSansTC-Black.woff) format('woff'),
+    url(../worff/notosanstc/NotoSansTC-Black.otf) format('opentype');
+}
