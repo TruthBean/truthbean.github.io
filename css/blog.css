@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     src: local('Open Sans'), local('OpenSans'), url('fonts/worff/OpenSans.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
+    font-style: normal;
     src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/worff/OpenSans-Bold.woff') format('woff');
 }
 
@@ -17,8 +17,8 @@
 
 @font-face {
     font-family: 'Source Code Pro';
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     src: local('Source Code Pro'), local('SourceCodePro-Regular'), url('fonts/worff/latin-ext.woff2') format('woff2');
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -28,14 +28,14 @@
 
 @font-face {
     font-family: 'Source Code Pro';
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     src: local('Source Code Pro'), local('SourceCodePro-Regular'), url('fonts/worff/latin.woff2') format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 html {
-    font-family: 'Noto Sans TC', "Arial", "Georgia", "Times New Roman", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "sans-serif", "serif", "Microsoft YaHei", "微软雅黑", "STXihei", "华文细黑";
+    font-family: 'Noto Sans TC', 'Arial', 'Georgia', 'Times New Roman', '文泉驛正黑', 'WenQuanYi Zen Hei', '儷黑 Pro', 'LiHei Pro', '微軟正黑體', 'Microsoft JhengHei', 'sans-serif', 'serif', 'Microsoft YaHei', '微软雅黑', 'STXihei', '华文细黑';
     -ms-text-size-adjust: 100%;
     /* 2 */
     -webkit-text-size-adjust: 100%;
@@ -45,27 +45,27 @@ html {
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
-    text-indent: 2em;
-    margin-bottom: 0;
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 0;
+    text-indent: 2em;
 }
 
 .sidebar-module-inset {
     padding: 0;
-    background-color: #f5f5f5;
     border-radius: 4px;
+    background-color: #fff;
 }
 
 .sidebar-module {
-     padding: 0; 
     margin: 0 -15px 15px;
+    padding: 0;
 }
 
 .blog-main {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-right: 3em;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-right: 3em;
 }
 
 @media (min-width: 1200px) {
@@ -76,6 +76,20 @@ html {
 
 .container {
     margin: 0 auto;
+    padding-right: 0;
     padding-left: 0;
-        padding-right: 0;
+}
+
+pre {
+    line-height: 1.7em;
+    color: #444;
+}
+
+.tagcloud a {
+    background-color: #666;
+    padding: 0.3rem;
+    border-width: thin;
+    border-color: white;
+    border-radius: 10%;
+    margin-bottom: 1rem;
 }
