@@ -3,20 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>jsf2.2的标签库uri的变化 | TruthBean</title>
+  <title>IDEA 更改toString 默认格式 | TruthBean</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="库 旧 URI 新 URI     Composite Components http://java.sun.com/jsf/composite http://xmlns.jcp.org/jsf/composite   Faces Core http://java.sun.com/jsf/core http://xmlns.jcp.org/jsf/core   HTML_BASIC http">
-<meta name="keywords" content="JavaEE">
+  <meta name="description" content="1、按组合键 Alt + Ins，弹出对话框。如图1 图1 2、 单击 “toString()”，弹出对话框； 单击 “settings”。如图2 图2 3、单击“templates ”。如图3 图3 4、单击“+”选项。如图4 图4 5、在弹出的对话框中，填入名称，如：“String toJsonString”，点击“ok”。如图5 图5 6、在空白处填入如下代码：123456789101112">
+<meta name="keywords" content="idea">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jsf2.2的标签库uri的变化">
-<meta property="og:url" content="http://blog.truthbean.com/2016/11/28/jsf2.2_tags/index.html">
+<meta property="og:title" content="IDEA 更改toString 默认格式">
+<meta property="og:url" content="http://blog.truthbean.com/2018/01/23/using_IDEA__changing_toString/index.html">
 <meta property="og:site_name" content="TruthBean">
-<meta property="og:description" content="库 旧 URI 新 URI     Composite Components http://java.sun.com/jsf/composite http://xmlns.jcp.org/jsf/composite   Faces Core http://java.sun.com/jsf/core http://xmlns.jcp.org/jsf/core   HTML_BASIC http">
+<meta property="og:description" content="1、按组合键 Alt + Ins，弹出对话框。如图1 图1 2、 单击 “toString()”，弹出对话框； 单击 “settings”。如图2 图2 3、单击“templates ”。如图3 图3 4、单击“+”选项。如图4 图4 5、在弹出的对话框中，填入名称，如：“String toJsonString”，点击“ok”。如图5 图5 6、在空白处填入如下代码：123456789101112">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2016-11-28T02:39:23.000Z">
+<meta property="og:image" content="http://blog.truthbean.com/statics/24005219_gGu8.png">
+<meta property="og:image" content="http://blog.truthbean.com/statics/24010425_NDGt.png">
+<meta property="og:image" content="http://blog.truthbean.com/statics/24010614_vVz9.png">
+<meta property="og:image" content="http://blog.truthbean.com/statics/24011005_oS1Y.png">
+<meta property="og:image" content="http://blog.truthbean.com/statics/24011205_j59C.png">
+<meta property="og:updated_time" content="2018-01-23T14:12:36.012Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jsf2.2的标签库uri的变化">
-<meta name="twitter:description" content="库 旧 URI 新 URI     Composite Components http://java.sun.com/jsf/composite http://xmlns.jcp.org/jsf/composite   Faces Core http://java.sun.com/jsf/core http://xmlns.jcp.org/jsf/core   HTML_BASIC http">
+<meta name="twitter:title" content="IDEA 更改toString 默认格式">
+<meta name="twitter:description" content="1、按组合键 Alt + Ins，弹出对话框。如图1 图1 2、 单击 “toString()”，弹出对话框； 单击 “settings”。如图2 图2 3、单击“templates ”。如图3 图3 4、单击“+”选项。如图4 图4 5、在弹出的对话框中，填入名称，如：“String toJsonString”，点击“ok”。如图5 图5 6、在空白处填入如下代码：123456789101112">
+<meta name="twitter:image" content="http://blog.truthbean.com/statics/24005219_gGu8.png">
   
     <link rel="alternate" href="/atom.xml" title="TruthBean" type="application/atom+xml">
   
@@ -74,13 +80,13 @@
 
     <div class="row">
         <div class="col-sm-9 blog-main">
-          <article id="post-jsf2.2_tags" class="article article-type-post" itemscope itemprop="blogPost">
+          <article id="post-using_IDEA__changing_toString" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h1 class="article-title" itemprop="name">
-      jsf2.2的标签库uri的变化
+      IDEA 更改toString 默认格式
     </h1>
   
 
@@ -89,7 +95,7 @@
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2016/11/28/jsf2.2_tags/" class="article-date"><time datetime="2016-11-28T02:20:58.317Z" itemprop="datePublished">2016-11-28</time></a>
+  <a href="/2018/01/23/using_IDEA__changing_toString/" class="article-date"><time datetime="2018-01-23T12:34:14.111Z" itemprop="datePublished">2018-01-23</time></a>
 </div>
 
     
@@ -100,57 +106,18 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <table>
-<thead>
-<tr>
-<th style="text-align:left">库</th>
-<th style="text-align:left">旧 URI</th>
-<th style="text-align:left">新 URI</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Composite Components</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsf/composite" target="_blank" rel="external">http://java.sun.com/jsf/composite</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsf/composite" target="_blank" rel="external">http://xmlns.jcp.org/jsf/composite</a></td>
-</tr>
-<tr>
-<td style="text-align:left">Faces Core</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsf/core" target="_blank" rel="external">http://java.sun.com/jsf/core</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsf/core" target="_blank" rel="external">http://xmlns.jcp.org/jsf/core</a></td>
-</tr>
-<tr>
-<td style="text-align:left">HTML_BASIC</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsf/html" target="_blank" rel="external">http://java.sun.com/jsf/html</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsf/html" target="_blank" rel="external">http://xmlns.jcp.org/jsf/html</a></td>
-</tr>
-<tr>
-<td style="text-align:left">JSTL Core</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsp/jstl/core" target="_blank" rel="external">http://java.sun.com/jsp/jstl/core</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsp/jstl/core" target="_blank" rel="external">http://xmlns.jcp.org/jsp/jstl/core</a></td>
-</tr>
-<tr>
-<td style="text-align:left">JSTL Functions</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsp/jstl/functions" target="_blank" rel="external">http://java.sun.com/jsp/jstl/functions</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsp/jstl/functions" target="_blank" rel="external">http://xmlns.jcp.org/jsp/jstl/functions</a></td>
-</tr>
-<tr>
-<td style="text-align:left">Facelets Templating</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsf/facelets" target="_blank" rel="external">http://java.sun.com/jsf/facelets</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsf/facelets" target="_blank" rel="external">http://xmlns.jcp.org/jsf/facelets</a></td>
-</tr>
-<tr>
-<td style="text-align:left">Pass Through Attributes</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsf/passthrouth" target="_blank" rel="external">http://java.sun.com/jsf/passthrouth</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsf/passthrough" target="_blank" rel="external">http://xmlns.jcp.org/jsf/passthrough</a></td>
-</tr>
-<tr>
-<td style="text-align:left">Pass Through Elements</td>
-<td style="text-align:left"><a href="http://java.sun.com/jsf" target="_blank" rel="external">http://java.sun.com/jsf</a></td>
-<td style="text-align:left"><a href="http://xmlns.jcp.org/jsf" target="_blank" rel="external">http://xmlns.jcp.org/jsf</a></td>
-</tr>
-</tbody>
-</table>
+        <p>1、按组合键 Alt + Ins，弹出对话框。如图1</p>
+<p><img src="/statics/24005219_gGu8.png" alt="输入图片说明" title="在这里输入图片标题"><br>图1</p>
+<p>2、 单击 “toString()”，弹出对话框； 单击 “settings”。如图2</p>
+<p><img src="/statics/24010425_NDGt.png" alt="输入图片说明" title="在这里输入图片标题"><br>图2</p>
+<p>3、单击“templates ”。如图3</p>
+<p><img src="/statics/24010614_vVz9.png" alt="输入图片说明" title="在这里输入图片标题"><br>图3</p>
+<p>4、单击“+”选项。如图4</p>
+<p><img src="/statics/24011005_oS1Y.png" alt="输入图片说明" title="在这里输入图片标题"><br>图4</p>
+<p>5、在弹出的对话框中，填入名称，如：“String toJsonString”，点击“ok”。如图5</p>
+<p><img src="/statics/24011205_j59C.png" alt="输入图片说明" title="在这里输入图片标题"><br>图5</p>
+<p>6、在空白处填入如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">public java.lang.String toString() &#123;</span><br><span class="line">#if ( $members.size() &gt; 0 )</span><br><span class="line">    #set ( $i = 0 )</span><br><span class="line">return &quot;$classname:&#123;&quot; +##</span><br><span class="line">    #foreach( $member in $members )</span><br><span class="line">        #if ( $i == 0 )#else</span><br><span class="line">        &quot;,&quot; +##</span><br><span class="line">        #end</span><br><span class="line">        #if ( $member.objectArray )</span><br><span class="line">            #if ($java_version &lt; 5)</span><br><span class="line">                &quot;$member.name:&quot; + ($member.accessor == null ? null : java.util.Arrays.asList($member.accessor)) +##</span><br><span class="line">            #else</span><br><span class="line">                &quot;$member.name:&quot; + java.util.Arrays.toString($member.accessor) +##</span><br><span class="line">            #end</span><br><span class="line">        #elseif ( $member.primitiveArray &amp;&amp; $java_version &gt;= 5)</span><br><span class="line">            &quot;$member.name:&quot; + java.util.Arrays.toString($member.accessor) +##</span><br><span class="line">        #elseif ( $member.string )</span><br><span class="line">            &quot;$member.name:\&apos;&quot; + $member.accessor + &apos;\&apos;&apos; +##</span><br><span class="line">        #else</span><br><span class="line">            &quot;$member.name:&quot; + $member.accessor +##</span><br><span class="line">        #end</span><br><span class="line">        #set ( $i = $i + 1 )</span><br><span class="line">    #end</span><br><span class="line">&apos;&#125;&apos;;</span><br><span class="line">#else</span><br><span class="line">return &quot;$classname:&#123;&#125;&quot;;</span><br><span class="line">#end</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>7、点击”ok”完成并关闭对话框。</p>
 
       
     </div>
@@ -161,12 +128,12 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://blog.truthbean.com/2016/11/28/jsf2.2_tags/" data-id="ciw1g72hh0002lgxordnignkp" class="article-share-link">
+      <a data-url="http://blog.truthbean.com/2018/01/23/using_IDEA__changing_toString/" data-id="ciw1hh38k000qlgxolc2zj7ho" class="article-share-link">
         <i class="fa fa-share"></i> 分享
       </a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaEE/">JavaEE</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/idea/">idea</a></li></ul>
 
 
     </footer>
@@ -176,16 +143,16 @@
 <ul id="article-nav" class="nav nav-pills nav-justified">
   
   <li role="presentation">
-    <a href="/2016/07/22/css-query/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/01/23/tomcat_iis_share_80_port/" id="article-nav-older" class="article-nav-link-wrap">
       <i class="fa fa-chevron-left pull-left"></i>
-      <span class="article-nav-link-title">CSS选择器</span>
+      <span class="article-nav-link-title">Windows 2008 使tomcat 与 iis 共用 80 端口</span>
     </a>
   </li>
   
   
   <li role="presentation">
-    <a href="/2016/11/28/using_native2ascii_to_change_unicode/" id="article-nav-newer" class="article-nav-link-wrap">
-      <span class="article-nav-link-title">利用native2ascii 实现 文件字符转码</span>
+    <a href="/2018/01/23/excel4j_project/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">excel4j开源项目</span>
       <i class="fa fa-chevron-right pull-right"></i>
     </a>
   </li>
